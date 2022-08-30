@@ -1,17 +1,76 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
+		 {
+			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "demo"
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
 			}
+
 		}
-	],
+	    ,{
+            "path" : "pages/cate/cate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "黑马优购",
+		"navigationBarBackgroundColor": "#C00000",
+		"backgroundColor": "#FFFFFF"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"selectedColor": "#C00000",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text":"首页",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/index-s.png"
+			},
+			{
+				"pagePath": "pages/cate/cate",
+				"text":"分类",
+				"iconPath": "static/icon/category.png",
+				"selectedIconPath": "static/icon/category-s.png"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"text":"购物车",
+				"iconPath": "static/icon/cart.png",
+				"selectedIconPath": "static/icon/cart-s.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text":"我的",
+				"iconPath": "static/icon/my.png",
+				"selectedIconPath": "static/icon/my-s.png"
+			}
+		]
+		
+	}
 }
